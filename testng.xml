@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests">
+  <test name="Chrome Test">
+<parameter name="Port" value="5555"/>
+    <classes>
+
+  <class name="GridTest.RegisterTestCase"/>
+   <class name="GridTest.LoginTestCase"/>
+ <class name="GridTest.InvalidLoginTestCase"/>
+  <class name="GridTest.CartTestCase"/>
+  <class name="GridTest.SearchProductsTestCase"/>
+  <class name="GridTest.ProductReviewTestCase"/>
+  
+ 
+ 
+           
+    </classes>
+    </test>
+   <test name="Edge Test">
+<parameter name="Port" value="7777"/>
+
+    <classes>
+    <class name="GridTest.RegisterTestCase"/>
+  <class name="GridTest.LoginTestCase"/>
+  
+  <class name="GridTest.InvalidLoginTestCase"/>
+  <class name="GridTest.CartTestCase"/>
+  <class name="GridTest.SearchProductsTestCase"/>
+  <class name="GridTest.ProductReviewTestCase"/> 
+ 
+ 
+           
+  
+          
+      
+    </classes>
+  </test>  
+   
+   <!-- Test -->
+</suite> <!-- Suite -->
